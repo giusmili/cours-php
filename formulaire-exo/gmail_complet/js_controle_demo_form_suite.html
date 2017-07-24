@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="icon.png" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="CSS_checkbox_full/style.css" />
+	<title>Connectez-vous</title>
+	
+		<style type="text/css">
+		body{
+			font-family: 'Open Sans',sans-serif;
+
+		}
+		h1{
+			font-size:38px!important;
+			font-weight:300;
+			color: #555;
+		}
+			.clearfix:before, .clearfix:after{
+			content: "";
+			display: table;
+			}
+			.clearfix:after {
+			clear: both;
+			}
+			img{
+			display: block;
+			margin: 40px auto 30px;
+			width:116px;
+			}
+		h1,p{
+			color: #555555;
+			
+			font-size: 42px;
+			
+			margin-bottom: 20px;
+			margin-top: 0;
+			text-align:center;
+			margin:0 10% 5px 10%;
+			width:auto;
+			min-width:310px;
+			/*border:solid 1px #ccc;*/
+	}
+	p{
+	font-size:20px;
+	}
+	#frame{
+			background-color: #F7F7F7;
+			border-radius: 2px;
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+			margin: 0 auto 25px;
+			padding: 20px 30px 20px 30px;
+			width: 304px;
+	}
+	#frame img{
+		display:block;
+		margin:5px auto;
+		border-radius:50%;
+	}
+	#frame p{
+		margin:3px 0 3px 0;
+		width:auto;
+		text-align:center;
+		
+		font-size:20px;
+	}
+	#frame p span{
+		font-size:14px;
+	}
+	#frame input[type="text"],input[type="password"]{
+			transition-duration:0.8s;
+
+	}
+	
+
+	#frame form input[type="password"],#frame form input[type="text"]{
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		display: block;
+		margin-bottom: 5px;
+		width: 100%;
+		border:solid 1px #ccc;
+		padding:10px;
+		font-size:15px;
+		
+	}
+	#frame form input[type="password"]:focus, #frame form input[type="text"]:focus{
+		box-shadow:0 0 3px #A0C3FF;
+		-moz-box-shadow:0 0 3px #A0C3FF;
+		-webkit-box-shadow:0 0 3px #A0C3FF;
+	}
+		#frame form input[type="button"] {
+		-moz-box-sizing: border-box;
+		display: block;
+		margin-bottom: 5px;
+		width: 100%;
+
+		border:solid 1px #ccc;
+		padding:10px;
+		font-size:15px;
+		
+	}
+	#frame form input[type="button"] {
+    background-color: #4D90FE;
+    background-image: -moz-linear-gradient(center top , #4D90FE, #4787ED);
+    border: 1px solid #3079ED;
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	border-radius:3px;
+	font-family: Arial,sans-serif;
+	
+	}
+	#frame form input[type="button"]:hover{
+		opacity:0.8;
+		border:solid 1px #4374E0;
+	}
+	input[type="text"]{
+
+	}
+	#frame form p{
+		font-size:14px;
+		margin:5px 0 5px 0;
+		color:red;
+	}
+	#frame form p.help{
+		color:#6DA1F5;
+		text-align:left;
+	}
+	#frame form p a{
+		color:#6DA1F5;
+		text-decoration:none;
+	}
+	#frame form p a:hover{
+		text-decoration:underline;
+	}
+	#frame form input[type="checkbox"]{
+		
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="header clearfix">
+		<img class="logo" src="image/logo_2x.png" alt="Google">
+	</div>
+	<h1>Tout Google avec un seul compte</h1>
+	<p>Connectez-vous pour accéder à vos comptes</p>	
+	<div id="frame">
+	<img src="user.png" alt="logo">
+	<p>Gius Mili<br>
+	<span>giusmili67@gmail.com</span>
+	</p>
+
+		<form action="" method="get" name="formulaire">
+			<input type="text" name="controle" id="login" autofocus placeholder="Login"/>
+				<p id="warning"></p>
+			<input type="password" name="controle" id="cont" autofocus placeholder="Mot de passe"/>
+			<p class="help">
+			<input type="checkbox" id="checkbox65" value="oui" name="connexion" class="css-checkbox med" checked="checked"/>
+			<label for="checkbox65" name="checkbox65_lbl"  id="check" class="css-label med elegant">Rester connecté</label>
+			</p>
+			<input type="button" value="Connexion" onclick="valider()" />
+			<p class="help"><a href="#" title="aide">Besoin d'aide ?</a></p>
+		</form>
+		<script type="text/javascript">
+			var check=document.getElementById("checkbox65");
+			function myCheck(e){
+				alert(e.target.value);
+			}
+			check.addEventListener("click",myCheck);
+		</script>
+	</div>
+</body>
+</html>

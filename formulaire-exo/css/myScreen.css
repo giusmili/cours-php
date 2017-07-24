@@ -1,0 +1,29 @@
+section a,a:focus{
+		outline:none;
+	}
+section{
+	min-width:800px;
+	max-width:940px;
+	margin:5px auto 10px;
+	}
+section p{
+	width:auto;
+	}
+
+.hero-unit h1,.hero-unit p{
+	color:#fff!important;
+	text-shadow:-1px 1px 1px #000;
+	}
+	section h1,h2{
+		font-weight:lighter;
+	}
+	section fieldset{
+		border:none!important;
+	}
+	section .span11{
+		width:auto;
+	}
+	.arriereplan{
+		background-image:url(http://lorempixel.com/940/270);
+		background-repeat:no-repeat;
+}
